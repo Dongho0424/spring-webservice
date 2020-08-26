@@ -2,12 +2,21 @@
 
 <h1>Spring Boot Web Service by Dongho</h1>
 <div class="col-md-12">
+<!--    로그인 & 글 등록 -->
     <div class="row">
         <div class="col-md-6">
             <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
+            {{#_userName}}
+                <span id="user">{{_userName}}</span> 고객님
+                <a href="/logout" class="btn btn-info active" role="button">Logout</a>
+            {{/_userName}}
+            {{^_userName}}
+                <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Login by Google</a>
+            {{/_userName}}
         </div>
     </div>
     <br>
+<!--    게시글 현황-->
     <table class="table table-horizontal table-bordered">
         <thead class="thead-strong">
         <tr>
