@@ -6,6 +6,10 @@ branches:
   only:
     - master
 
+# 실행 권한 부여
+before_install:
+  - chomod +x gradlew
+
 # Travis CI 서버의 Home
 cache:
   directories:
@@ -21,6 +25,3 @@ notifications:
       - pridesam@snu.ac.kr
 
 
-# 실행 권한 부여
-before_install:
-  - chomod +x gradlew
