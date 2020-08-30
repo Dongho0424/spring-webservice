@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.springboot.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-29T14:11:14" hostname="LAPTOP-KM8D3NT3" time="0.008">
+<testsuite name="org.example.springboot.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-30T14:40:02" hostname="LAPTOP-KM8D3NT3" time="0.011">
   <properties/>
-  <testcase name="testLombok" classname="org.example.springboot.web.dto.HelloResponseDtoTest" time="0.008"/>
+  <testcase name="testLombok" classname="org.example.springboot.web.dto.HelloResponseDtoTest" time="0.011"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
