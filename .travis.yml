@@ -20,7 +20,7 @@ script: "./gradlew clean build"
 
 before_deploy:
   - zip -r spring-webservice
-  - mkdir -r deploy
+  - mkdir -p deploy
   - mv spring-webservice.zip deploy/spring-webservice.zip
 
 deploy:
