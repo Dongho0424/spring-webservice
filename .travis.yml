@@ -6,6 +6,10 @@ branches:
   only:
     - master
 
+# 실행 권한 부여
+before_install:
+  - chmod +x gradlew
+
 # Travis CI 서버의 Home
 cache:
   directories:
@@ -14,9 +18,7 @@ cache:
 
 script: "./gradlew clean build"
 
-# 실행 권한 부여
-before_install:
-  - chmod +x gradlew
+before_deploy:
   - zip -r spring-webservice
   - mkdir -r deploy
   - mv spring-webservice.zip deploy/spring-webservice.zip
